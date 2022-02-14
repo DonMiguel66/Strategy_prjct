@@ -10,6 +10,4 @@ namespace Assets.Scripts.Abstractions
         void Select();
         void Deselect();
     }
-
-
 }
