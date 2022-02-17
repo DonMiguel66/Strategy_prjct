@@ -1,8 +1,9 @@
 using System.Linq;
 using UnityEngine;
-using Assets.Scripts.Abstractions;
+using SimpleStrategy3D.Abstractions;
+using SimpleStrategy3D.UIModels;
 
-namespace Assets.Scripts.SimpleStrategy3D
+namespace SimpleStrategy3D.UIPresenters
 {
     public class MouseInteractionsPresenter : MonoBehaviour
     {

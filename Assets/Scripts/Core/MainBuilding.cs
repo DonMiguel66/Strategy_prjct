@@ -1,13 +1,10 @@
-using Assets.Scripts.Abstractions;
-using Assets.Scripts.Core;
+using SimpleStrategy3D.Abstractions;
 using UnityEngine;
 
-namespace Assets.Scripts.SimpleStrategy3D
+namespace SimpleStrategy3D.Core
 {
-    public class MainBuilding : MonoBehaviour, IUnitProducer, ISelectable
+    public class MainBuilding : CommandExecutorBase<IProduceUnitCommand>, ISelectable
     {
-        [SerializeField]
-        private GameObject _unitPrefab;
         [SerializeField]
         private Transform _unitsParent;
         [SerializeField]
@@ -21,11 +18,7 @@ namespace Assets.Scripts.SimpleStrategy3D
         public float Health => _health;
         public float MaxHealth => _maxHealth;
         public RenderTexture Icon => _icon;
-        public void ProduceUnit()
-        {
-            Instantiate(_unitPrefab, new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10)), Quaternion.identity, _unitsParent);
-        }
-
+        
         public void Select()
         {
             _outline.OutlineMode = Outline.Mode.OutlineAll;
@@ -34,6 +27,10 @@ namespace Assets.Scripts.SimpleStrategy3D
         public void Deselect()
         {
             _outline.OutlineMode = Outline.Mode.None;
+        }
+        protected override void ExecuteSpecificCommand(IProduceUnitCommand command)
+        {
+            Instantiate(command.UnitPrefab, new Vector3(Random.Range(-10, 10), 0, Random.Range(-10, 10)), Quaternion.identity, _unitsParent);
         }
 
     }

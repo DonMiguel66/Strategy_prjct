@@ -1,6 +1,6 @@
 {
     "name": "Core",
-    "rootNamespace": "",
+    "rootNamespace": "SimpleStrategy3D.Core",
     "references": [
         "GUID:130b14c523c56b747b1f89cecd505633"
     ],
