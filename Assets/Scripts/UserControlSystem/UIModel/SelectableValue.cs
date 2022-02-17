@@ -1,8 +1,8 @@
 ﻿using System;
 using UnityEngine;
-using Assets.Scripts.Abstractions;
+using SimpleStrategy3D.Abstractions;
 
-namespace Assets.Scripts.SimpleStrategy3D
+namespace SimpleStrategy3D.UIModels
 {
     [CreateAssetMenu(fileName = nameof(SelectableValue), menuName = "Strategy Game/"+ nameof(SelectableValue), order = 0)]
     public class SelectableValue : ScriptableObject

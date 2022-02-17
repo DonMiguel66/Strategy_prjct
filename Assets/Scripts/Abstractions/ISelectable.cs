@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.Abstractions
+namespace SimpleStrategy3D.Abstractions
 {
     public interface ISelectable
     {

@@ -1,9 +1,9 @@
 {
     "name": "UserControlSystem",
-    "rootNamespace": "",
+    "rootNamespace": "SimpleStrategy3D.UserControlSystem",
     "references": [
-        "GUID:0a1cbf700c4c74d4092b857e9fcf5519",
-        "GUID:130b14c523c56b747b1f89cecd505633"
+        "GUID:130b14c523c56b747b1f89cecd505633",
+        "GUID:b3213dacc0bac814a85c57645ec33a58"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

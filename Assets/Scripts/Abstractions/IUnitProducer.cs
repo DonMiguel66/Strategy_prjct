@@ -1,4 +1,4 @@
-namespace Assets.Scripts.SimpleStrategy3D
+namespace SimpleStrategy3D.Abstractions
 {
     public interface IUnitProducer
     {

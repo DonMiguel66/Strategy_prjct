@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Assets.Scripts.Core
+namespace SimpleStrategy3D.Core
 {
     [DisallowMultipleComponent]
 
